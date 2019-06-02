@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500&display=swap');
+
 /* Reset! */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -9,40 +10,41 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
   vertical-align: baseline;
-  -webkit-font-smoothing: antialiased; }
-
+  -webkit-font-smoothing: antialiased;
+}
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-  display: block; }
-
+	display: block;
+}
 body {
-  line-height: 1; }
-
+	line-height: 1;
+}
 ol, ul {
-  list-style: none; }
-
+	list-style: none;
+}
 blockquote, q {
-  quotes: none; }
-
+	quotes: none;
+}
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none; }
-
+	content: '';
+	content: none;
+}
 table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 /* This is desktop only! */
 .App {
@@ -53,48 +55,55 @@ table {
   overflow: hidden;
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
-  background-color: #FFF; }
+  background-color:#FFF;
+}
 
 .App h1, h2, h3, h4 {
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 /* Header */
+
 header {
   position: relative;
   width: 100vw;
   height: 90px;
-  background-color: #006689; }
-  header::after {
+  background-color: #006689;
+  &::after {
     content: "";
     position: absolute;
     width: 100vw;
     height: 90px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-  header svg.home {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  svg.home {
     position: absolute;
     left: 3.75%;
     right: 93.47%;
     top: 27.78%;
-    bottom: 27.78%; }
-  header .sub-nav {
-    float: right; }
-    header .sub-nav span.user {
+    bottom: 27.78%;
+  }
+  .sub-nav {
+    float: right;
+    span.user {
       position: absolute;
       left: 85.72%;
       right: 15.76%;
       top: 38.78%;
-      bottom: 33.44%; }
-    header .sub-nav span.settings {
+      bottom: 33.44%;
+    }
+    span.settings {
       position: absolute;
       left: 98%;
       right: 4%;
       top: 38.78%;
-      bottom: 33.44%; }
-    header .sub-nav li {
+      bottom: 33.44%;
+    }
+    li {
       list-style-type: none;
       text-transform: uppercase;
-      color: white; }
-      header .sub-nav li.user {
+      color: white;
+      &.user {
         position: absolute;
         width: 103px;
         height: 30px;
@@ -102,8 +111,9 @@ header {
         top: 25%;
         font-weight: 300;
         font-size: 16px;
-        line-height: 24px; }
-      header .sub-nav li.settings {
+        line-height: 24px;
+      }
+      &.settings {
         position: absolute;
         width: 119px;
         height: 30px;
@@ -111,17 +121,23 @@ header {
         top: 25%;
         font-weight: 300;
         font-size: 16px;
-        line-height: 24px; }
-    header .sub-nav svg.user {
+        line-height: 24px;
+      }
+    }
+    svg.user {
       position: absolute;
       right: 20.83%;
       top: 33.33%;
-      bottom: 33.33%; }
-    header .sub-nav svg.settings {
+      bottom: 33.33%;
+    }
+    svg.settings {
       position: absolute;
       right: 10.21%;
       top: 33.33%;
-      bottom: 33.33%; }
+      bottom: 33.33%;
+    }
+  }
+}
 
 .App header h1 {
   font-weight: 400;
@@ -133,4 +149,5 @@ header {
   line-height: 45px;
   top: 26.67%;
   bottom: 25.56%;
-  color: white; }
+  color: white;
+}
