@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500&display=swap');
 
+$primary: #006689;
+$lightgray: #EEEEEE;
+$mediumgray: #C4C4C4;
+
 /* Reset! */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -50,8 +54,8 @@ table {
 .App {
   min-width: 960px;
   max-width: 100vw;
-  height: 100vh;
-  min-height: 768px;
+  max-height: 100vh;
+  min-height: 600px;
   overflow: hidden;
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
@@ -68,7 +72,7 @@ header {
   position: relative;
   width: 100vw;
   height: 90px;
-  background-color: #006689;
+  background-color: $primary;
   &::after {
     content: "";
     position: absolute;
@@ -145,9 +149,70 @@ header {
   cursor: default;
   left: 7.85%;
   font-size: 36px;
-  right: 58.97%;
   line-height: 45px;
   top: 26.67%;
   bottom: 25.56%;
   color: white;
+}
+
+/* Navigation, content, sidebar and footer share a CSS grid. */
+  /* The grid is split into 3 columns, 4 rows, adjusted to viewport. Viewport has a min-width of 960px (see .App). */
+
+.AppGrid {
+  display: grid;
+  grid-template-columns: 22vw 39vw 39vw;
+  grid-template-rows: 25vh 25vh 25vh 1fr;
+  height: calc(100vh - 90px);
+}
+
+nav {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  font-weight: 400;
+  h2 {
+    font-size: 24px;
+    padding: 1em;
+    color: $primary;
+  }
+  ul {
+    list-style-type: none;
+    li {
+      display: block;
+      padding: 1.5em 1em 1.5em 2em;
+      width: 75%;
+      border-top: 1px solid $mediumgray;
+    }
+  }
+  div {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    height: calc(100% - 16vh);
+    box-shadow: 4px 2px 6px 0px rgba(0,0,0,0.25);
+    overflow: scroll;
+  }
+}
+
+/* Content and sidebar currently share a content container to poll content together from /pages/, within the same component. */
+
+.content {
+  grid-column: 2 / 4;
+  grid-row: 1 / 4;
+}
+
+.sidebar {
+  box-shadow: -4px 2px 6px 0px rgba(0,0,0,0.25);
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  height: calc(100% - 16vh);
+  overflow: scroll;
+  float: right;
+  width: 22vw;
+}
+
+/* Footer lives at the bottom, with the free space available after most of the grid is calculated. */
+
+footer {
+  grid-column: 1 / 4;
+  grid-row: 4;
+  background-color: $lightgray;
 }

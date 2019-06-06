@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Home, User, Settings } from 'react-feather'
 
-export class header extends Component {
+export class Header extends Component {
     render() {
         return (
             <header>
@@ -15,4 +15,4 @@ export class header extends Component {
     }
 }
 
-export default header
+export default Header

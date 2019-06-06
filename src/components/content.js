@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 
-export class content extends Component {
+export class Content extends Component {
     render() {
         return (
-            <div>
+            <div className="content">
+
+            <div className="sidebar">
                 
+            </div>    
             </div>
         )
     }
 }
 
-export default content
+export default Content
