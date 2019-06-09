@@ -138,7 +138,7 @@ header {
 /* The grid is split into 3 columns, 4 rows, adjusted to viewport. Viewport has a min-width of 960px (see .App). */
 .AppGrid {
   display: grid;
-  grid-template-columns: minmax(250px, 20vw) 1fr minmax(250px, 20vw);
+  grid-template-columns: minmax(300px, 20vw) 1fr minmax(300px, 20vw);
   grid-template-rows: 27vh 27vh 1fr 90px;
   height: calc(100vh - 90px); }
 
@@ -202,6 +202,7 @@ nav {
 /* Content and sidebar currently share a content container to poll content together from /pages/, within the same component. */
 .content {
   grid-column: 2 / 4;
+  z-index: 1;
   grid-row: 1 / 4; }
 
 .sidebar {
@@ -213,8 +214,9 @@ nav {
   float: right;
   width: 22vw; }
 
-/* Footer lives at the bottom, with the free space available after most of the grid is calculated. */
+/* Footer lives at the bottom, with a fixed 90px height. */
 footer {
   grid-column: 1 / 4;
+  z-index: 2;
   grid-row: 4;
   background-color: #EEEEEE; }
