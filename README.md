@@ -28,42 +28,42 @@ Watching the number of required objects in state currently set to `true` will ad
 
 **Pages**
 
-[ ] 1. Welcome page
-[ ] 2. Create profile
-[ ] 3. Disclaimer
-[ ] 4. Who are you?
-[ ] 5. Tell us your concerns
-[ ] 6. Money: Rent
-[ ] 7. Money: Deposits
-[ ] 8. Money: Important dates
-[ ] 9. Money: Payment methods
-[ ] 10. Day to Day (landlord)
-[ ] 11. Day to Day (tenant)
-[ ] 12. Timeline
-[ ] 13. Parties
-[ ] 14. Parties: Changes to the Parties (landlord)
-[ ] 15. Parties: Changes to the Parties (tenant)
-[ ] 16. Additional Terms: Categories
-[ ] 17. Additional Terms: Terms
-[ ] 18. Additional Terms: Summary
-[ ] 19. Unit
-[ ] 20. End
+- [ ] 1. Welcome page
+- [ ] 2. Create profile
+- [ ] 3. Disclaimer
+- [ ] 4. Who are you?
+- [ ] 5. Tell us your concerns
+- [ ] 6. Money: Rent
+- [ ] 7. Money: Deposits
+- [ ] 8. Money: Important dates
+- [ ] 9. Money: Payment methods
+- [ ] 10. Day to Day (landlord)
+- [ ] 11. Day to Day (tenant)
+- [ ] 12. Timeline
+- [ ] 13. Parties
+- [ ] 14. Parties: Changes to the Parties (landlord)
+- [ ] 15. Parties: Changes to the Parties (tenant)
+- [ ] 16. Additional Terms: Categories
+- [ ] 17. Additional Terms: Terms
+- [ ] 18. Additional Terms: Summary
+- [ ] 19. Unit
+- [ ] 20. End
 
 **Infrastructure**
 
-[ ] 1. Exporting state to filled Ontario Lease PDF
-[ ] 2. Exporting state to pre-filled, tenant-based layout
-[ ] 3. Filtering the views to this layout
-[ ] 4. Creating a back-end to store the state as it's entered and associate with a user profile (see Pages, #2)
+- [ ] 1. Exporting state to filled Ontario Lease PDF
+- [ ] 2. Exporting state to pre-filled, tenant-based layout
+- [ ] 3. Filtering the views to this layout
+- [ ] 4. Creating a back-end to store the state as it's entered and associate with a user profile (see Pages, #2)
 
 **User interface**
 
 Doesn't include *page-specific* interfaces, like the sliders on Pages, #5 or the image upload UI on Unit (Pages, #19).
 
-[ ] 1. Progress bar in footer
-[ ] 2. Adding the `active` class to the `svg.chevronRight` so that it animates rotating when a navigation option is selected.
-[ ] 3. Calendar modals.
-[ ] 4. Settings modal.
+- [ ] 1. Progress bar in footer
+- [ ] 2. Adding the `active` class to the `svg.chevronRight` so that it animates rotating when a navigation option is selected.
+- [ ] 3. Calendar modals.
+- [ ] 4. Settings modal.
 
 ## Suggested milestones
 
