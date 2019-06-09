@@ -134,6 +134,8 @@ header {
   bottom: 25.56%;
   color: white; }
 
+/* Navigation, content, sidebar and footer share a CSS grid. */
+/* The grid is split into 3 columns, 4 rows, adjusted to viewport. Viewport has a min-width of 960px (see .App). */
 .AppGrid {
   display: grid;
   grid-template-columns: 22vw 39vw 39vw;
@@ -162,6 +164,7 @@ nav {
     box-shadow: 4px 2px 6px 0px rgba(0, 0, 0, 0.25);
     overflow: scroll; }
 
+/* Content and sidebar currently share a content container to poll content together from /pages/, within the same component. */
 .content {
   grid-column: 2 / 4;
   grid-row: 1 / 4; }
@@ -175,6 +178,7 @@ nav {
   float: right;
   width: 22vw; }
 
+/* Footer lives at the bottom, with the free space available after most of the grid is calculated. */
 footer {
   grid-column: 1 / 4;
   grid-row: 4;
