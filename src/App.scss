@@ -243,8 +243,32 @@ nav {
 .content {
   grid-column: 2 / 4;
   z-index: 1;
+  line-height: 2;
   grid-row: 1 / 4;
   .contentRoute {
+    h1 {
+      font-size: calc(10px + 2vmin);
+    }
+    h3 {
+      font-size: calc(10px + 1vmin);
+    }
+    ol {
+      margin-top: 1em;
+    }
+    button {
+      &#getStarted {
+        background-color: $primary;
+        padding: 1em 3em 1em 3em;
+        text-transform: uppercase;
+        border-radius: 3px;
+        margin: 0 auto;
+        color: white;
+        outline: 0;
+        border: 0;
+        display: block;
+        box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.25);
+      }
+    }
     display: inline-block;
     margin-top: 5vw;
     height: 100%;

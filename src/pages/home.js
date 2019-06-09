@@ -4,7 +4,15 @@ export class Home extends Component {
     render() {
         return (
             <div>
-                <p>This is home.</p>
+                <h1>Welcome to the Ontario Lease Wizard!<br/>Let's get started!</h1>
+                <h3>Here's an overview of the process</h3>
+                <ol>
+                    <li>1. Sign in or Create a new Lease</li>
+                    <li>2. Share your Concerns</li>
+                    <li>3. Review & Add Terms</li>
+                    <li>4. View & Print</li>
+                </ol>
+                <button id="getStarted">Get Started</button>
             </div>
         )
     }
