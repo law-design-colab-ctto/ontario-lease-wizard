@@ -138,14 +138,17 @@ header {
 /* The grid is split into 3 columns, 4 rows, adjusted to viewport. Viewport has a min-width of 960px (see .App). */
 .AppGrid {
   display: grid;
-  grid-template-columns: 22vw 39vw 39vw;
-  grid-template-rows: 25vh 25vh 25vh 1fr;
+  grid-template-columns: minmax(250px, 20vw) 1fr minmax(250px, 20vw);
+  grid-template-rows: 27vh 27vh 1fr 90px;
   height: calc(100vh - 90px); }
 
 nav {
   grid-column: 1;
   grid-row: 1 / 4;
   font-weight: 400; }
+  nav svg.chevronRight.active {
+    transform: rotate(90deg);
+    transition: all 0.5s ease; }
   nav h2 {
     font-size: 24px;
     padding: 1em;
