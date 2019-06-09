@@ -1,68 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ontario Lease Wizard, written in **React** using Create React App.
 
-## Available Scripts
+# Development
+You should install [yarn](https://yarnpkg.com/lang/en/) first. Then, of course, run `yarn install` in the root directory.
 
-In the project directory, you can run:
+`yarn start` will start the development server -- the SCSS in `src/App.scss` will compile to CSS and hot reload, too.
 
-### `npm start`
+`yarn build` will create a production-ready version.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Project sketch
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The application itself is a wizard that walks you through the creation of the Ontario Standard Lease. The components on the page are as follows:
 
-### `npm test`
+- Header (`components/header.js`)
+- Navigation (`components/navigation.js`)
+- Content (`components/content.js`)
+- Footer (`components/footer.js`)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The header and footer have a set size of 90px, the rest of the components share a CSS grid layout (`.AppGrid` in the SCSS). The application is intended for screens with a minimum width of 960px and should scale up from there adequately.
 
-### `npm run build`
+The navigation will send a path to the router; the content component will watch the current route and change its current content accordingly (pulling from the `pages` directory). All the pages have a form layout that correlates and writes to the App's overall state.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The state is comprised of an array of objects, which store what is entered for each part of the wizard -- some parts of the wizard will write just one property to the object (the user's input), but most will also flip a boolean to `true` if that part of the form is `required`.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Watching the number of required objects in state currently set to `true` will adjust the display of progress (checkboxes in the navigation, a progress bar in the footer) accordingly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Todo
 
-### `npm run eject`
+**Pages**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[ ] 1. Welcome page
+[ ] 2. Create profile
+[ ] 3. Disclaimer
+[ ] 4. Who are you?
+[ ] 5. Tell us your concerns
+[ ] 6. Money: Rent
+[ ] 7. Money: Deposits
+[ ] 8. Money: Important dates
+[ ] 9. Money: Payment methods
+[ ] 10. Day to Day (landlord)
+[ ] 11. Day to Day (tenant)
+[ ] 12. Timeline
+[ ] 13. Parties
+[ ] 14. Parties: Changes to the Parties (landlord)
+[ ] 15. Parties: Changes to the Parties (tenant)
+[ ] 16. Additional Terms: Categories
+[ ] 17. Additional Terms: Terms
+[ ] 18. Additional Terms: Summary
+[ ] 19. Unit
+[ ] 20. End
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Infrastructure**
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[ ] 1. Exporting state to filled Ontario Lease PDF
+[ ] 2. Exporting state to pre-filled, tenant-based layout
+[ ] 3. Filtering the views to this layout
+[ ] 4. Creating a back-end to store the state as it's entered and associate with a user profile (see Pages, #2)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**User interface**
 
-## Learn More
+Doesn't include *page-specific* interfaces, like the sliders on Pages, #5 or the image upload UI on Unit (Pages, #19).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[ ] 1. Progress bar in footer
+[ ] 2. Adding the `active` class to the `svg.chevronRight` so that it animates rotating when a navigation option is selected.
+[ ] 3. Calendar modals.
+[ ] 4. Settings modal.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Suggested milestones
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The state should be developed first for single-session functionality before worrying about bolting on a back-end. This means developing each page component as necessary without those features. During this process, the user interface todos should be checked off. After the wizard is entirely completable, the export comes next. Finally, the back-end is established and users can create and store credentials.
