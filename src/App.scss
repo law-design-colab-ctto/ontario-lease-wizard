@@ -169,6 +169,38 @@ nav {
   grid-column: 1;
   grid-row: 1 / 4;
   font-weight: 400;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -5px;
+    margin-right: 10px;
+    &.Money {
+      width: 33px;
+      height: 19px;
+      margin-right: 3px;
+    }
+    &.dayToDay {
+      width: 37px;
+      height: 29px;
+      margin-right: 0;
+    }
+    &.Timeline {
+      width: 26px;
+      height: 30px;
+    }
+    &.Unit {
+      width: 27px;
+      height: 30px;
+    }
+    &.Parties {
+      width: 30px;
+      height: 28px;
+    }
+    &.AdditionalTerms {
+      width: 26px;
+      height: 30px;
+    }
+  }
   svg.chevronRight {
     display: inline-block;
     color: $primary;

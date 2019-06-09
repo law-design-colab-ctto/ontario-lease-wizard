@@ -146,6 +146,31 @@ nav {
   grid-column: 1;
   grid-row: 1 / 4;
   font-weight: 400; }
+  nav img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -5px;
+    margin-right: 10px; }
+    nav img.Money {
+      width: 33px;
+      height: 19px;
+      margin-right: 3px; }
+    nav img.dayToDay {
+      width: 37px;
+      height: 29px;
+      margin-right: 0; }
+    nav img.Timeline {
+      width: 26px;
+      height: 30px; }
+    nav img.Unit {
+      width: 27px;
+      height: 30px; }
+    nav img.Parties {
+      width: 30px;
+      height: 28px; }
+    nav img.AdditionalTerms {
+      width: 26px;
+      height: 30px; }
   nav svg.chevronRight {
     display: inline-block;
     color: #006689;
