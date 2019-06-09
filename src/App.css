@@ -242,6 +242,23 @@ nav {
     font-size: 24px;
     padding: 0.5em 1em 0.5em 1em;
     color: #006689; }
+  .sidebar div svg.chevronRight {
+    display: inline-block;
+    color: #006689;
+    vertical-align: middle; }
+    .sidebar div svg.chevronRight.active {
+      transform: rotate(90deg);
+      transition: all 0.5s ease; }
+  .sidebar div ul {
+    list-style-type: none; }
+    .sidebar div ul li {
+      display: block;
+      padding: 1em 0.5em 1em 2em;
+      width: 75%;
+      border-top: 1px solid #C4C4C4; }
+      .sidebar div ul li span {
+        display: inline;
+        vertical-align: middle; }
 
 /* Footer lives at the bottom, with a fixed 90px height. */
 footer {

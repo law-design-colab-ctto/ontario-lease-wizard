@@ -291,6 +291,30 @@ nav {
     padding: 0.5em 1em 0.5em 1em;
     color: $primary;
   }
+  div {
+    svg.chevronRight {
+      display: inline-block;
+      color: $primary;
+      vertical-align: middle;
+      &.active {
+        transform: rotate(90deg);
+        transition: all 0.5s ease;
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        span {
+          display: inline;
+          vertical-align: middle;
+        }
+        display: block;
+        padding: 1em 0.5em 1em 2em;
+        width: 75%;
+        border-top: 1px solid $mediumgray;
+      }
+    }
+  }
 }
 
 /* Footer lives at the bottom, with a fixed 90px height. */
