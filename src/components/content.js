@@ -10,7 +10,7 @@ export class Content extends Component {
                 <Route exact path="/" component={Home} />
             </div>
             <div className="sidebar">
-                
+                <h2>Learn More</h2>
             </div>    
             </div>
         )
