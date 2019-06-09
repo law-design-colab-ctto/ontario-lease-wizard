@@ -146,9 +146,13 @@ nav {
   grid-column: 1;
   grid-row: 1 / 4;
   font-weight: 400; }
-  nav svg.chevronRight.active {
-    transform: rotate(90deg);
-    transition: all 0.5s ease; }
+  nav svg.chevronRight {
+    display: inline-block;
+    color: #006689;
+    vertical-align: middle; }
+    nav svg.chevronRight.active {
+      transform: rotate(90deg);
+      transition: all 0.5s ease; }
   nav h2 {
     font-size: 24px;
     padding: 1em;
@@ -160,6 +164,9 @@ nav {
       padding: 1.5em 1em 1.5em 2em;
       width: 75%;
       border-top: 1px solid #C4C4C4; }
+      nav ul li span {
+        display: inline-block;
+        vertical-align: middle; }
   nav div {
     margin-top: 8vh;
     margin-bottom: 8vh;

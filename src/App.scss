@@ -170,6 +170,9 @@ nav {
   grid-row: 1 / 4;
   font-weight: 400;
   svg.chevronRight {
+    display: inline-block;
+    color: $primary;
+    vertical-align: middle;
     &.active {
       transform: rotate(90deg);
       transition: all 0.5s ease;
@@ -183,6 +186,10 @@ nav {
   ul {
     list-style-type: none;
     li {
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
       display: block;
       padding: 1.5em 1em 1.5em 2em;
       width: 75%;

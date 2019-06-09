@@ -8,12 +8,12 @@ export class navigation extends Component {
             <div>
                 <h2>Table of Contents</h2>
                 <ul>
-                <li>Money</li>
-                <li>Day to Day</li>
-                <li>Timeline</li>
-                <li>Unit</li>
-                <li>Parties</li>
-                <li>Additional Terms</li>
+                    <li><ChevronRight className="chevronRight" size={25} /> <span>Money</span></li>
+                    <li><ChevronRight className="chevronRight" size={25} /> <span>Day to Day</span></li>
+                    <li><ChevronRight className="chevronRight" size={25} /> <span>Timeline</span></li>
+                    <li><ChevronRight className="chevronRight" size={25} /> <span>Unit</span></li>
+                    <li><ChevronRight className="chevronRight" size={25} /> <span>Parties</span></li>
+                    <li><ChevronRight className="chevronRight" size={25} /> <span>Additional Terms</span></li>
                 </ul>
             </div>
             </nav>
