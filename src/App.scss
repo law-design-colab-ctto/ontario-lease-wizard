@@ -83,10 +83,14 @@ header {
   }
   svg.home {
     position: absolute;
-    left: 3.75%;
-    right: 93.47%;
     top: 27.78%;
     bottom: 27.78%;
+  }
+  .homeHeader {
+    position: absolute;
+    width: 100vw;
+    left: 2%;
+    top: 25%;
   }
   .sub-nav {
     float: right;
@@ -148,7 +152,7 @@ header {
   font-weight: 400;
   position: absolute;
   cursor: default;
-  left: 7.85%;
+  left: 47px;
   font-size: 36px;
   line-height: 45px;
   top: 26.67%;
