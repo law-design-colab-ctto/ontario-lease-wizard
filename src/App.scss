@@ -300,9 +300,9 @@ nav {
       display: inline-block;
       color: $primary;
       vertical-align: middle;
+      transition: all 0.5s ease;
       &.active {
         transform: rotate(90deg);
-        transition: all 0.5s ease;
       }
     }
     ul {
@@ -311,6 +311,10 @@ nav {
         span {
           display: inline;
           vertical-align: middle;
+        }
+        div {
+          display: block;
+          transition: visibility 0s, opacity 0.5s linear, height 1s;
         }
         display: block;
         padding: 1em 0.5em 1em 2em;

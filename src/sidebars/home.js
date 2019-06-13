@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
-import { ChevronRight } from 'react-feather'
+import { ListItem } from '../sidebars/components.js'
 
 export class sidebarHome extends Component {
     render() {
         return (
             <div>
                 <ul>
-                    <li><ChevronRight className="chevronRight" size={25} /> <span>Who's this for?</span></li>
-                    <li><ChevronRight className="chevronRight" size={25} /> <span>Can I trust it?</span></li>
-                    <li><ChevronRight className="chevronRight" size={25} /> <span>Why standard terms?</span></li>
-                    <li><ChevronRight className="chevronRight" size={25} /> <span>Is my personal information safe?</span></li>
-                    <li><ChevronRight className="chevronRight" size={25} /> <span>Why should I use it?</span></li>
+                    <ListItem text={"Who's this for?"} detail={"Here's more information."}/>
+                    <ListItem text={"Can I trust it?"} />
+                    <ListItem text={"Why standard terms?"} />
+                    <ListItem text={"Is my personal information safe?"} />
+                    <ListItem text={"Why should I use it?"} />
                 </ul>
             </div>
         )

@@ -248,10 +248,10 @@ nav {
   .sidebar div svg.chevronRight {
     display: inline-block;
     color: #006689;
-    vertical-align: middle; }
+    vertical-align: middle;
+    transition: all 0.5s ease; }
     .sidebar div svg.chevronRight.active {
-      transform: rotate(90deg);
-      transition: all 0.5s ease; }
+      transform: rotate(90deg); }
   .sidebar div ul {
     list-style-type: none; }
     .sidebar div ul li {
@@ -262,6 +262,9 @@ nav {
       .sidebar div ul li span {
         display: inline;
         vertical-align: middle; }
+      .sidebar div ul li div {
+        display: block;
+        transition: visibility 0s, opacity 0.5s linear, height 1s; }
 
 /* Footer lives at the bottom, with a fixed 90px height. */
 footer {
