@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export class Home extends Component {
     render() {
@@ -12,7 +13,7 @@ export class Home extends Component {
                     <li>3. Review & Add Terms</li>
                     <li>4. View & Print</li>
                 </ol>
-                <button id="getStarted">Get Started</button>
+                <Link to="/login" className="button"><button id="getStarted">Get Started</button></Link>
             </div>
         )
     }
