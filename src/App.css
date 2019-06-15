@@ -251,8 +251,9 @@ nav {
   .sidebar div svg.chevronRight {
     display: inline-block;
     color: #006689;
+    cursor: pointer;
     vertical-align: middle;
-    transition: all 0.5s ease; }
+    transition: all 0.25s ease; }
     .sidebar div svg.chevronRight.active {
       transform: rotate(90deg); }
   .sidebar div ul {
@@ -263,6 +264,7 @@ nav {
       width: 75%;
       border-top: 1px solid #C4C4C4; }
       .sidebar div ul li span {
+        cursor: pointer;
         display: inline;
         vertical-align: middle; }
       .sidebar div ul li div {
