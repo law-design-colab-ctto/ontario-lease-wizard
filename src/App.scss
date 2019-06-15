@@ -266,18 +266,19 @@ nav {
       text-decoration: none;
     }
     button {
-      &#getStarted {
-        background-color: $primary;
-        padding: 1em 3em 1em 3em;
+        padding: 1em 2em 1em 2em;
         text-transform: uppercase;
         border-radius: 3px;
         cursor: pointer;
-        margin: 0 auto;
+        background-color: $primary;
         color: white;
+        box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.25);
         outline: 0;
         border: 0;
+        font-size: 0.9em;
+      &#getStarted {
+        margin: 0 auto;
         display: block;
-        box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.25);
       }
     }
     display: inline-block;
@@ -286,6 +287,51 @@ nav {
     overflow-y: scroll;
     width: calc(100% - (300px + 2vw));
     margin-left: 2vw;
+  }
+}
+
+// Individual pages
+  // Login
+
+.content {
+  .loginLeft {
+    width: 25%;
+    padding: 2% 18% 2% 2%;
+    border-right: 1px solid $mediumgray;
+    float: left;
+    h3.signIn {
+      margin-top: 10vh;
+    }
+    input {
+      display: block;
+      outline: 0;
+      border: 0;
+      border-bottom: 1px solid $primary;
+      font-family: "Work Sans";
+      margin-top: 25px;
+      padding-bottom: 5px;
+      width: 100%;
+      font-size: 1.1em;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+    small {
+      font-size: 0.8em;
+      display: block;
+    }
+    button.signIn {
+      margin-top: 1em;
+    }
+  }
+  .loginRight {
+    float: left;
+    width: 32%;
+    padding: 2% 10% 2% 3%;
+    min-height: 500px;
+    p {
+      margin-bottom: 1em;
+    }
   }
 }
 
