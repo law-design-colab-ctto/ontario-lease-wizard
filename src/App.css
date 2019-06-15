@@ -193,9 +193,10 @@ nav {
       width: 75%;
       border-top: 1px solid #C4C4C4; }
       nav ul li span {
+        cursor: pointer;
         display: inline-block;
         vertical-align: middle; }
-  nav div {
+  nav div.navDiv {
     margin-top: 8vh;
     margin-bottom: 8vh;
     height: calc(100% - 16vh);
