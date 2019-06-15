@@ -179,6 +179,7 @@ nav {
     vertical-align: middle;
     margin-left: -5px;
     margin-right: 10px;
+    cursor: pointer;
     &.Money {
       width: 33px;
       height: 19px;
@@ -210,6 +211,7 @@ nav {
     display: inline-block;
     color: $primary;
     vertical-align: middle;
+    margin-right: 5px;
     &.active {
       transform: rotate(90deg);
       transition: all 0.5s ease;
