@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom'
 // Importing our content pages.
 import Home from '../pages/home.js'
 import loginProfile from '../pages/login_start.js'
+import Disclaimer from '../pages/disclaimer.js'
 
 // Importing our sidebars (they change with the route, as the pages do.)
 import sidebarHome from '../sidebars/home.js'
@@ -16,10 +17,11 @@ export class Content extends Component {
             <div className="contentRoute">
                 <Route exact path="/" component={Home} />
                 <Route exact path="/login" component={loginProfile}/>
+                <Route exact path="/disclaimer" component={Disclaimer}/>
             </div>
             <div className="sidebar">
                 <h2>Learn More</h2>
-                <Route exact path={["/", "/login"]} component={sidebarHome} />
+                <Route exact path={["/", "/login", "/disclaimer"]} component={sidebarHome} />
             </div>    
             </div>
         )

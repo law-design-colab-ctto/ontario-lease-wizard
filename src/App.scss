@@ -280,10 +280,13 @@ nav {
         margin: 0 auto;
         display: block;
       }
+      &:disabled {
+        background-color: $mediumgray;
+      }
     }
     display: inline-block;
-    margin-top: 5vh;
-    height: calc(100% - 5vh);
+    margin-top: 7vh;
+    height: calc(100% - 7vh);
     overflow-y: scroll;
     width: calc(100% - (300px + 2vw));
     margin-left: 2vw;
@@ -330,6 +333,14 @@ nav {
     padding: 2% 10% 2% 3%;
     min-height: 500px;
     p {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.content {
+  .disclaimer {
+    h3, p {
       margin-bottom: 1em;
     }
   }

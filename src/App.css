@@ -213,8 +213,8 @@ nav {
   grid-row: 1 / 4; }
   .content .contentRoute {
     display: inline-block;
-    margin-top: 5vh;
-    height: calc(100% - 5vh);
+    margin-top: 7vh;
+    height: calc(100% - 7vh);
     overflow-y: scroll;
     width: calc(100% - (300px + 2vw));
     margin-left: 2vw; }
@@ -240,6 +240,8 @@ nav {
       .content .contentRoute button#getStarted {
         margin: 0 auto;
         display: block; }
+      .content .contentRoute button:disabled {
+        background-color: #C4C4C4; }
 
 .content .loginLeft {
   width: 25%;
@@ -273,6 +275,9 @@ nav {
   min-height: 500px; }
   .content .loginRight p {
     margin-bottom: 1em; }
+
+.content .disclaimer h3, .content .disclaimer p {
+  margin-bottom: 1em; }
 
 .sidebar {
   box-shadow: -4px 2px 6px 0px rgba(0, 0, 0, 0.25);

@@ -61,7 +61,7 @@ Watching the number of required objects in state currently set to `true` will ad
 Doesn't include *page-specific* interfaces, like the sliders on Pages, #5 or the image upload UI on Unit (Pages, #19).
 
 - [ ] 1. Progress bar in footer
-- [ ] 2. Adding the `active` class to the `svg.chevronRight` so that it animates rotating when a navigation option is selected.
+- [x] 2. Adding the `active` class to the `svg.chevronRight` so that it animates rotating when a navigation option is selected.
 - [ ] 3. Calendar modals.
 - [ ] 4. Settings modal.
 
