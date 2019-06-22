@@ -19,8 +19,7 @@ export class Content extends Component {
             </div>
             <div className="sidebar">
                 <h2>Learn More</h2>
-                <Route exact path="/" component={sidebarHome} />
-                <Route exact path="/login" component={sidebarHome} />
+                <Route exact path={["/", "/login"]} component={sidebarHome} />
             </div>    
             </div>
         )
