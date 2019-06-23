@@ -73,6 +73,9 @@ table {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   background-color:#FFF;
+  label {
+    cursor: pointer;
+  }
   input[type=checkbox] {
     width: 20px;
     height: 20px;
