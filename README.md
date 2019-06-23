@@ -28,9 +28,9 @@ Watching the number of required objects in state currently set to `true` will ad
 
 **Pages**
 
-- [ ] 1. Welcome page
-- [ ] 2. Create profile
-- [ ] 3. Disclaimer
+- [x] 1. Welcome page
+- [ ] 2. Create profile *(reliant on back-end to finish the page)*
+- [x] 3. Disclaimer
 - [ ] 4. Who are you?
 - [ ] 5. Tell us your concerns
 - [ ] 6. Money: Rent
