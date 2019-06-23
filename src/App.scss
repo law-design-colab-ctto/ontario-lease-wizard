@@ -73,6 +73,26 @@ table {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   background-color:#FFF;
+  input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    vertical-align: middle;
+    box-shadow: none;
+    -webkit-appearance: none;
+    border: 1px solid $primary;
+    border-radius: 3px;
+    &:checked:after {
+      content: '✓';
+      font-size: 20px;
+      bottom: 1px;
+      left: 1px;
+      color: $primary;
+      position: absolute;
+      height: 20px;
+      width: 20px;
+    }
+  }
 }
 
 .App h1, h2, h3, h4 {
