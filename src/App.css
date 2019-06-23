@@ -44,6 +44,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  scrollbar-width: 1px; }
+
+::-webkit-scrollbar {
+  width: 1px; }
+
+::-webkit-scrollbar-corner {
+  display: none; }
+
 /* This is desktop only! */
 .App {
   min-width: 960px;
