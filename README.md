@@ -31,7 +31,7 @@ Watching the number of required objects in state currently set to `true` will ad
 - [x] 1. Welcome page
 - [ ] 2. Create profile *(reliant on back-end to finish the page)*
 - [x] 3. Disclaimer
-- [ ] 4. Who are you?
+- [ ] 4. Who are you? *(only shows if profile exists, so requires back-end)*
 - [ ] 5. Tell us your concerns
 - [ ] 6. Money: Rent
 - [ ] 7. Money: Deposits

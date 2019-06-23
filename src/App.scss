@@ -63,6 +63,10 @@ table {
   display: none;
 }
 
+.disabledLink {
+  pointer-events: none;
+}
+
 /* This is desktop only! */
 .App {
   min-width: 960px;
@@ -373,11 +377,46 @@ nav {
   }
 }
 
+// Disclaimer page.
+
 .content {
   .disclaimer {
     h3, p {
       margin-bottom: 1em;
     }
+  }
+}
+
+// Concerns page.
+
+.content {
+  .sliderTable {
+    position: relative;
+    width: 97%;
+    display: table;
+    margin-top: 3vh;
+  }
+  .sliderRow {
+    display: table-row;
+    padding: 5px;
+  }
+  .sliderLabel {
+    width: 25%;
+    display: table-cell;
+  }
+  .sliderLabelLeft {
+    text-transform: uppercase;
+    font-size: 0.6em;
+    position: absolute;
+    top: -15px;
+    left: 28%;
+  }
+  .sliderLabelRight {
+    text-transform: uppercase;
+    font-size: 0.6em;
+    position: absolute;
+    top: -15px;
+    right: 0%;
   }
 }
 

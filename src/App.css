@@ -54,6 +54,9 @@ table {
 ::-webkit-scrollbar-corner {
   display: none; }
 
+.disabledLink {
+  pointer-events: none; }
+
 /* This is desktop only! */
 .App {
   min-width: 960px;
@@ -308,6 +311,34 @@ nav {
 
 .content .disclaimer h3, .content .disclaimer p {
   margin-bottom: 1em; }
+
+.content .sliderTable {
+  position: relative;
+  width: 97%;
+  display: table;
+  margin-top: 3vh; }
+
+.content .sliderRow {
+  display: table-row;
+  padding: 5px; }
+
+.content .sliderLabel {
+  width: 25%;
+  display: table-cell; }
+
+.content .sliderLabelLeft {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  position: absolute;
+  top: -15px;
+  left: 28%; }
+
+.content .sliderLabelRight {
+  text-transform: uppercase;
+  font-size: 0.6em;
+  position: absolute;
+  top: -15px;
+  right: 0%; }
 
 .sidebar {
   box-shadow: -4px 2px 6px 0px rgba(0, 0, 0, 0.25);

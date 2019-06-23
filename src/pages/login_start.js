@@ -13,7 +13,6 @@ export class loginProfile extends Component {
                     <h3 className="signIn">Sign In</h3>
                     <input type="email" placeholder="Email address"/>
                     <input type="password" placeholder="Password"/>
-                    <small>Must be at least 8 characters</small>
                     <button disabled="true" className="signIn">Sign In</button>
                 </div>
                 <div className="loginRight">
