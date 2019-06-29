@@ -3,9 +3,29 @@ import Slider from 'rc-slider'
 import 'rc-slider/assets/index.css'
 
 export class Concerns extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            concernText: ""
+        }
+        this.updateConcernInput = this.updateConcernInput.bind(this);
+        this.sendAdditionalConcern = this.sendAdditionalConcern.bind(this);
+    }
     sliderChange = (name, value) => {
         let tempState = this.props.state
         tempState.concerns[name] = value
+        this.props.handler(tempState)
+    }
+    updateConcernInput(event) {
+        this.setState({ concernText: event.target.value })
+    }
+
+    sendAdditionalConcern = (e) => {
+        e.preventDefault()
+        let concernTextValue = this.state.concernText
+        let tempState = this.props.state
+        tempState.concerns["additional"].push(concernTextValue)
+        this.setState({concernText: ""})
         this.props.handler(tempState)
     }
 
@@ -91,6 +111,11 @@ export class Concerns extends Component {
                         </div>
                     </div>
                 </div>
+                <p>Other? Please specify so we can add this to our inventory.</p>
+                <form>
+                    <input value={this.state.concernText} onChange={this.updateConcernInput} type="text" placeholder="Type here..."/>
+                    <input type="submit" onClick={this.sendAdditionalConcern}/>
+                </form>
             </div>
         )
     }

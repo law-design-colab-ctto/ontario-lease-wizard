@@ -336,6 +336,16 @@ nav {
   // Login
 
 .content {
+  input {
+    display: block;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid $primary;
+    font-family: "Work Sans";
+    margin-top: 25px;
+    padding-bottom: 5px;
+    font-size: 1.1em;
+  }
   .loginLeft {
     width: 25%;
     padding: 2% 18% 2% 2%;
@@ -345,15 +355,7 @@ nav {
       margin-top: 10vh;
     }
     input {
-      display: block;
-      outline: 0;
-      border: 0;
-      border-bottom: 1px solid $primary;
-      font-family: "Work Sans";
-      margin-top: 25px;
-      padding-bottom: 5px;
       width: 100%;
-      font-size: 1.1em;
     }
     p {
       margin-bottom: 1em;
@@ -417,6 +419,19 @@ nav {
     position: absolute;
     top: -15px;
     right: 0%;
+  }
+  input[type=submit] {
+        padding: 1em 2em 1em 2em;
+        text-transform: uppercase;
+        border-radius: 3px;
+        cursor: pointer;
+        background-color: $primary;
+        color: white;
+        box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.25);
+        outline: 0;
+        border: 0;
+        font-size: 0.9em;
+        margin-bottom: 1em;
   }
 }
 

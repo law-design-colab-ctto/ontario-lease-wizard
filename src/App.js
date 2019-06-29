@@ -17,7 +17,8 @@ class App extends Component {
         "maintenance": 0,
         "guests": 0,
         "lengthOfTenancy": 0,
-        "subletting": 0
+        "subletting": 0,
+        "additional": []
       }
     }
   

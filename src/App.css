@@ -276,6 +276,16 @@ nav {
       .content .contentRoute button:disabled {
         background-color: #C4C4C4; }
 
+.content input {
+  display: block;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #006689;
+  font-family: "Work Sans";
+  margin-top: 25px;
+  padding-bottom: 5px;
+  font-size: 1.1em; }
+
 .content .loginLeft {
   width: 25%;
   padding: 2% 18% 2% 2%;
@@ -284,15 +294,7 @@ nav {
   .content .loginLeft h3.signIn {
     margin-top: 10vh; }
   .content .loginLeft input {
-    display: block;
-    outline: 0;
-    border: 0;
-    border-bottom: 1px solid #006689;
-    font-family: "Work Sans";
-    margin-top: 25px;
-    padding-bottom: 5px;
-    width: 100%;
-    font-size: 1.1em; }
+    width: 100%; }
   .content .loginLeft p {
     margin-bottom: 1em; }
   .content .loginLeft small {
@@ -339,6 +341,19 @@ nav {
   position: absolute;
   top: -15px;
   right: 0%; }
+
+.content input[type=submit] {
+  padding: 1em 2em 1em 2em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #006689;
+  color: white;
+  box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  outline: 0;
+  border: 0;
+  font-size: 0.9em;
+  margin-bottom: 1em; }
 
 .sidebar {
   box-shadow: -4px 2px 6px 0px rgba(0, 0, 0, 0.25);
