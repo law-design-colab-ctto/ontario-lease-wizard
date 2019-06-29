@@ -9,11 +9,11 @@ export class loginProfile extends Component {
                 <div className="loginLeft">
                     <h3>Create Profile</h3>
                     <p>If you would like to save your information for next time, please create a profile here.</p>
-                    <button disabled="true">Sign Up</button>
+                    <button disabled={true}>Sign Up</button>
                     <h3 className="signIn">Sign In</h3>
                     <input type="email" placeholder="Email address"/>
                     <input type="password" placeholder="Password"/>
-                    <button disabled="true" className="signIn">Sign In</button>
+                    <button disabled={true} className="signIn">Sign In</button>
                 </div>
                 <div className="loginRight">
                     <h3>Proceed as Guest</h3>
