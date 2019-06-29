@@ -3,6 +3,11 @@ import Slider from 'rc-slider'
 import 'rc-slider/assets/index.css'
 
 export class Concerns extends Component {
+    sliderChange = (name, value) => {
+        let tempState = this.props.state
+        tempState.concerns[name] = value
+        this.props.handler(tempState)
+    }
 
     render() {
         const sliderContainer = {
@@ -25,6 +30,8 @@ export class Concerns extends Component {
                         <Slider handleStyle={{
                         border: "1px solid #9EF5E0", height: "16px", width: "16px", boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"}} 
                         trackStyle={{ backgroundColor: "#7BF1D4"}}
+                        value={this.props.state.concerns.rent}
+                        onChange={(value) => this.sliderChange("rent", value)}
                         />
                 </div>
                     </div>
@@ -32,9 +39,10 @@ export class Concerns extends Component {
                     <div className="sliderLabel">Utilities</div>
                     <div style={sliderContainer}>
                         <Slider handleStyle={{
-                            border: "1px solid #9EF5E0", height: "16px", width: "16px", boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
-                        }}
+                            border: "1px solid #9EF5E0", height: "16px", width: "16px", boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"}}
                             trackStyle={{ backgroundColor: "#7BF1D4" }}
+                            value={this.props.state.concerns.utilities}
+                            onChange={(value) => this.sliderChange("utilities", value)}
                         />
                     </div>
                     </div>
@@ -42,9 +50,10 @@ export class Concerns extends Component {
                         <div className="sliderLabel">Maintenance</div>
                         <div style={sliderContainer}>
                             <Slider handleStyle={{
-                                border: "1px solid #9EF5E0", height: "16px", width: "16px", boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
-                            }}
+                                border: "1px solid #9EF5E0", height: "16px", width: "16px", boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"}}
                                 trackStyle={{ backgroundColor: "#7BF1D4" }}
+                                value={this.props.state.concerns.maintenance}
+                                onChange={(value) => this.sliderChange("maintenance", value)}
                             />
                         </div>
                     </div>
@@ -52,9 +61,10 @@ export class Concerns extends Component {
                         <div className="sliderLabel">Guests</div>
                         <div style={sliderContainer}>
                             <Slider handleStyle={{
-                                border: "1px solid #9EF5E0", height: "16px", width: "16px", boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
-                            }}
+                                border: "1px solid #9EF5E0", height: "16px", width: "16px", boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"}}
                                 trackStyle={{ backgroundColor: "#7BF1D4" }}
+                                value={this.props.state.concerns.guests}
+                                onChange={(value) => this.sliderChange("guests", value)}
                             />
                         </div>
                     </div>
@@ -62,9 +72,10 @@ export class Concerns extends Component {
                         <div className="sliderLabel">Length of tenancy</div>
                         <div style={sliderContainer}>
                             <Slider handleStyle={{
-                                border: "1px solid #9EF5E0", height: "16px", width: "16px", boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
-                            }}
+                                border: "1px solid #9EF5E0", height: "16px", width: "16px", boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"}}
                                 trackStyle={{ backgroundColor: "#7BF1D4" }}
+                                value={this.props.state.concerns.lengthOfTenancy}
+                                onChange={(value) => this.sliderChange("lengthOfTenancy", value)}
                             />
                         </div>
                     </div>
@@ -72,9 +83,10 @@ export class Concerns extends Component {
                         <div className="sliderLabel">Subletting / Airbnb</div>
                         <div style={sliderContainer}>
                             <Slider handleStyle={{
-                                border: "1px solid #9EF5E0", height: "16px", width: "16px", boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"
-                            }}
+                                border: "1px solid #9EF5E0", height: "16px", width: "16px", boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)"}}
                                 trackStyle={{ backgroundColor: "#7BF1D4" }}
+                                value={this.props.state.concerns.subletting}
+                                onChange={(value) => this.sliderChange("subletting", value)}
                             />
                         </div>
                     </div>

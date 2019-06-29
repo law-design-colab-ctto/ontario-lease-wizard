@@ -19,7 +19,7 @@ export class Content extends Component {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/login" component={loginProfile}/>
                 <Route exact path="/disclaimer" component={Disclaimer}/>
-                <Route exact path="/concerns" component={Concerns}/>
+                <Route exact path="/concerns" render={() => <Concerns state={this.props.state} handler={this.props.handler} />}/>
             </div>
             <div className="sidebar">
                 <h2>Learn More</h2>
