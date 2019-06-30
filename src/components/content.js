@@ -10,7 +10,9 @@ import Concerns from '../pages/concerns.js'
 // Importing our sidebars (they change with the route, as the pages do.)
 import sidebarHome from '../sidebars/home.js'
 
+// The Router below changes the page content depending on the current route path. Each page is going to have some way -- whether in the footer or on the page, or even through components/navigation.js -- to push a new path, thus changing the content.
 
+// If a component needs to manipulate App-level state (and that will be often) then you need to throw the Route a render and make an inline function to inject the passing of props and prop functions. See /concerns below.
 export class Content extends Component {
     render() {
         return (
