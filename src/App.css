@@ -74,6 +74,7 @@ table {
     height: 20px;
     position: relative;
     vertical-align: middle;
+    display: inline-block;
     box-shadow: none;
     -webkit-appearance: none;
     border: 1px solid #006689;
@@ -314,6 +315,9 @@ nav {
 .content .disclaimer h3, .content .disclaimer p {
   margin-bottom: 1em; }
 
+.content .disclaimer label {
+  vertical-align: bottom; }
+
 .content .sliderTable {
   position: relative;
   width: 97%;
@@ -396,3 +400,10 @@ footer {
   z-index: 2;
   grid-row: 4;
   background-color: #EEEEEE; }
+
+/* Animation */
+.switch-wrapper {
+  position: relative; }
+
+.switch-wrapper > div {
+  position: absolute; }

@@ -85,6 +85,7 @@ table {
     height: 20px;
     position: relative;
     vertical-align: middle;
+    display: inline-block;
     box-shadow: none;
     -webkit-appearance: none;
     border: 1px solid $primary;
@@ -386,6 +387,9 @@ nav {
     h3, p {
       margin-bottom: 1em;
     }
+    label {
+      vertical-align: bottom;
+    }
   }
 }
 
@@ -487,4 +491,13 @@ footer {
   z-index: 2;
   grid-row: 4;
   background-color: $lightgray;
+}
+
+/* Animation */
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
 }
