@@ -11,15 +11,17 @@ export class Concerns extends Component {
         this.updateConcernInput = this.updateConcernInput.bind(this);
         this.sendAdditionalConcern = this.sendAdditionalConcern.bind(this);
     }
+    // Changes the pre-existing state value (integer) for how much they're concerned.
     sliderChange = (name, value) => {
         let tempState = this.props.state
         tempState.concerns[name] = value
         this.props.handler(tempState)
     }
+    // If they have an additional concern, we keep a component-scoped state to store what they're typing.
     updateConcernInput(event) {
         this.setState({ concernText: event.target.value })
     }
-
+    // This pushes the additional concern as a string to an array called "additional" in the parent state.
     sendAdditionalConcern = (e) => {
         e.preventDefault()
         let concernTextValue = this.state.concernText
