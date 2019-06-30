@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
 export class Footer extends Component {
     render() {
@@ -7,22 +7,25 @@ export class Footer extends Component {
         const { location } = this.props;
         const previousHidden = (location) => {
             switch(location.pathname) {
-                default: 
-                    return true
+                default: return true
             }
         }
         const nextHidden = (location) => {
             switch(location.pathname) {
-                case '/concerns': 
-                    return false;
-                default: 
-                    return true
+                case "/concerns": return false;
+                default: return true
+            }
+        }
+        const nextLink = (location) => {
+            switch(location.pathname) {
+                case "/concerns": return "/rent";
+                default: return "/";
             }
         }
         return (
             <footer>
                 <button id="previous" className={previousHidden(location) ? "hidden" : null}>Previous</button>  
-                <button id="next" className={nextHidden(location) ? "hidden" : null}>Next</button>              
+                <Link to={nextLink(location)}><button id="next" className={nextHidden(location) ? "hidden" : null}>Next</button></Link>              
             </footer>
         )
     }

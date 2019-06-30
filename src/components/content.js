@@ -7,6 +7,7 @@ import Home from '../pages/home.js'
 import loginProfile from '../pages/login_start.js'
 import Disclaimer from '../pages/disclaimer.js'
 import Concerns from '../pages/concerns.js'
+import Rent from '../pages/money/rent.js'
 
 // Importing our sidebars (they change with the route, as the pages do.)
 import sidebarHome from '../sidebars/home.js'
@@ -33,6 +34,7 @@ export class Content extends Component {
                 <Route exact path="/login" component={loginProfile}/>
                 <Route exact path="/disclaimer" component={Disclaimer}/>
                 <Route exact path="/concerns" render={() => <Concerns state={this.props.state} handler={this.props.handler} />}/>
+                        <Route exact path="/rent" render={() => <Rent state={this.props.state} handler={this.props.handler} />} />
                 </AnimatedSwitch>
             </div>
             <div className="sidebar">
