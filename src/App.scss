@@ -496,12 +496,11 @@ footer {
   position: relative;
   background-color: $lightgray;
   button {
-    padding: 1em 2em 1em 2em;
+    padding: 1em 1.7em 1em 1.5em;
     text-transform: uppercase;
     border-radius: 3px;
     cursor: pointer;
-    background-color: $primary;
-    color: white;
+    color: $primary;
     box-shadow: 2px 4px 6px 0px rgba(0,0,0,0.25);
     outline: 0;
     border: 0;
@@ -516,14 +515,30 @@ footer {
       pointer-events: none;
     }
     &#previous {
+      padding: 1em 1em 1em 1.7em;
+      background-color: white;
       position: absolute;
       top: 20%;
       left: 20px;
+      svg.chevronLeft {
+        position: absolute;
+        left: 1px;
+        top: 11px;
+      }
     }
     &#next {
+      background-color: $secondary;
       position: absolute;
       left: calc(100% - 120px);
       top: 20%;
+      svg.chevronRight {
+        position: absolute;
+        right: -2px;
+        top: 11px;
+      }
+    }
+    svg.chevronRight {
+    display: inline-block;
     }
   }
 }
