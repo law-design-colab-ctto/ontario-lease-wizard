@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import { ChevronRight } from 'react-feather'
 
 let moneySvg = require("../assets/navigation/money.svg"),
@@ -51,8 +52,10 @@ class NavigationItem extends Component {
 
 export class navigation extends Component {
     render() {
+        const { location } = this.props
+        const hiddenNav = location.pathname === "/" ? "hidden" : ""
         return (
-            <nav>
+            <nav className={hiddenNav}>
             <div className="navDiv">
                 <h2>Table of Contents</h2>
                 <ul>
@@ -69,4 +72,4 @@ export class navigation extends Component {
     }
 }
 
-export default navigation
+export default withRouter(navigation)

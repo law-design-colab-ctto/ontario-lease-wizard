@@ -214,6 +214,9 @@ nav {
   grid-column: 1;
   grid-row: 1 / 4;
   font-weight: 400;
+  &.hidden {
+    visibility: hidden;
+  }
   img {
     display: inline-block;
     vertical-align: middle;

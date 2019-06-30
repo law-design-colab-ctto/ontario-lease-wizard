@@ -183,6 +183,8 @@ nav {
   grid-column: 1;
   grid-row: 1 / 4;
   font-weight: 400; }
+  nav.hidden {
+    visibility: hidden; }
   nav img {
     display: inline-block;
     vertical-align: middle;
