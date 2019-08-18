@@ -127,6 +127,22 @@ table {
       background-color: $primary;
     }
   }
+    span.date {
+    border: 1px solid $primary;
+    border-radius: 3px;
+    width: 147px;
+    height: 32px;
+    padding: 0;
+    padding-top: 4px;
+    padding-left: 8px;
+    font-size: 16px;
+    &:empty::before {
+    content: 'mm/dd/yyyy';
+    font-size: 16px;
+    color: $mediumgray;
+    display: inline-block;
+    }
+  }
 }
 
 .App h1, h2, h3, h4 {
@@ -465,6 +481,20 @@ nav {
         border: 0;
         font-size: 0.9em;
         margin-bottom: 1em;
+  }
+}
+
+// Rent page.
+
+.content {
+  #rent {
+    div.picker {
+      position: relative;
+    }
+    img[alt=calendar] {
+      position: absolute;
+      left: 30px;
+    }
   }
 }
 
