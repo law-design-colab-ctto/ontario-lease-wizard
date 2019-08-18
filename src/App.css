@@ -96,7 +96,8 @@ table {
     vertical-align: text-bottom;
     border: 2px solid #006689;
     border-radius: 30px;
-    position: relative; }
+    position: relative;
+    margin-top: 16px; }
     .App input[type=radio]:checked {
       border: 1px solid #006689; }
     .App input[type=radio]:checked:after {

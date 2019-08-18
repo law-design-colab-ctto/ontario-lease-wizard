@@ -110,6 +110,7 @@ table {
     border: 2px solid $primary;
     border-radius: 30px;
     position: relative;
+    margin-top: 16px;
     &:checked {
       border: 1px solid $primary;
     }
