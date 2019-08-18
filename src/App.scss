@@ -101,6 +101,31 @@ table {
       width: 20px;
     }
   }
+  input[type=radio] {
+    display: inline-block;
+    -webkit-appearance: none;
+    height: 14px;
+    width: 14px;
+    vertical-align: text-bottom;
+    border: 2px solid $primary;
+    border-radius: 30px;
+    position: relative;
+    &:checked {
+      border: 1px solid $primary;
+    }
+    &:checked:after {
+      content: '';
+      display: block;
+      height: 2px;
+      top: 2px;
+      left: 2px;
+      width: 2px;
+      border: 3px solid transparent;
+      border-radius: 5px;
+      position: absolute;
+      background-color: $primary;
+    }
+  }
 }
 
 .App h1, h2, h3, h4 {
